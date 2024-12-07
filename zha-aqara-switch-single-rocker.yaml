@@ -9,12 +9,12 @@ blueprint:
       description: Aqara Rocker Switch (Single Rocker)
       selector:
         device:
-          integration: zha
-          manufacturer: LUMI
+          filter:
+            - integration: zha
+              manufacturer: LUMI
+              model: lumi.switch.l1aeu1
           entity:
           - domain:
-            - sensor
-            device_class:
             - switch
           multiple: false
     button_single_press:
