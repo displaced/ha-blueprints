@@ -54,4 +54,4 @@ action:
     sequence: !input button_double_press
   - conditions:
     - '{{ command == ''hold'' }}'
-    sequence: !input button_long_press_left
+    sequence: !input button_long_press
